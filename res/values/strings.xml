@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, CollegeActivity!</string>
+    <string name="app_name">MuziqBuzz</string>
+    <string name="marquee">This is an Android Application to help the students and Faculties to stay connected to
+         the college events and updates.This is an upgraded and secure Version.xxxxxxxxxxxxx
+         xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+         xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+         </string>
+
+</resources>

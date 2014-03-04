@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="11">
+	
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_weight="1">
+    
+    <ImageView
+        android:id="@+id/albumart"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/musicinyourhead"/>
+    
+    </LinearLayout>
+    
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_weight="5"
+	    android:orientation="horizontal"
+	    android:background="#000080">
+    
+    <SeekBar
+        android:id="@+id/seek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"/>
+
+    </LinearLayout>
+    
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_weight="5"
+	    android:orientation="horizontal"
+	    android:weightSum="5"
+	    android:background="#000080">
+    
+    <ImageButton
+        android:id="@+id/rew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/button_rewind"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"/>
+    
+     <ImageButton
+        android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/button_stop"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"/>
+    
+    <ImageButton
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/button_play"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"/>
+    
+    <ImageButton
+        android:id="@+id/pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/button_pause"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"/>
+    
+    <ImageButton
+        android:id="@+id/forw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/button_forward"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"/>
+
+    </LinearLayout>
+    
+</LinearLayout>

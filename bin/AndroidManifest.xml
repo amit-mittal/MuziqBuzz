@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.college"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+    
+    <uses-permission android:name="android.permission.READ_OWNER_DATA"/>
+    <uses-permission android:name="android.permission.WRITE_OWNER_DATA"/>
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
+	
+    <application
+        android:icon="@drawable/musicinyourhead"
+        android:label="@string/app_name" >
+        
+        <activity
+            android:name=".Welcome"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".Tab"></activity>
+		
+		<activity android:name=".Music"></activity>       
+        
+        <activity android:name=".Videos"></activity>
+        
+        <activity android:name=".MyPlaylist"></activity>
+        
+        <activity android:name=".Sound_setting"
+            android:label="Preferences"
+            android:theme="@android:style/Theme.Dialog"
+            >
+            
+        </activity>
+        
+        <activity android:name=".AboutMe"
+            android:label="About Me"
+            android:theme="@android:style/Theme.Dialog">
+            
+        </activity>
+    
+    <activity
+            android:name=".CollegeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.college.COLLEGEACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+      <activity
+            android:name=".AfterLogin"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.college.AFTERLOGIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".ViewVideo">
+                  <intent-filter>
+                        <action android:name="android.intent.action.VIEWVIDEO" />
+                        <category android:name="android.intent.category.DEFAULT" />
+                  </intent-filter>
+        </activity>
+        
+        <activity android:name=".ViewMusic">
+                  <intent-filter>
+                        <action android:name="android.intent.action.VIEWMUSIC" />
+                        <category android:name="android.intent.category.DEFAULT" />
+                  </intent-filter>
+            </activity>
+            
+        <activity android:name=".Login">
+                  <intent-filter>
+                        <action android:name="android.intent.action.LOGIN" />
+                        <category android:name="android.intent.category.DEFAULT" />
+                  </intent-filter>
+            </activity>
+            
+        <service android:name=".MyService"></service>
+        
+    </application>
+
+</manifest>
